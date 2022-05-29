@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Noto+Serif&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            color: rgb(57, 53, 53);
+            padding-bottom: 20px;
+            
+        }
+        body{
+            background-color: #80F7DF;
+            font-family: "Kanit";
+            
+        }
+        header{
+            padding: 10px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: center;
+            
+           
+           
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            
+           
+            
+            
+        }
+        .p1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        .c1{
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        #peso{
+            width: 77%;
+            padding: 10px;
+            border-radius: 10px;
+           
+            
+        }
+        .p2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        #altura{
+            width: 77%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .c2{
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        .botao{
+            background-color: rgb(100, 148, 148);
+            width: 120px;
+            text-align: center;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1s;
+            margin-bottom: 10px;
+            font-family: "Kanit";
+            color: white;
+            margin-top: 20px;
+            
+        }
+        .botao:hover{
+            background-color:rgb(85, 97, 97) ;
+        }
+        .result{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 20px;
+            padding-top: 20px;
+
+        }
+        .sec{
+            
+            margin: auto;
+            
+        }
+        .sub1{
+            color: #1A7563;
+        }
+        .resultin{
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+     
+        .iimage{
+            max-width: 110px;
+            
+            
+        }
+        .titulo1{
+            padding-left: 20px;
+        }
+        nav{
+            margin-bottom: 50px;
+        }
+        nav > a{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="imc-.png" class="iimage" alt="">
+        <h1 class="titulo1">Calcule O Seu Imc <div class="sub1">Saúde No Topo</div> </h1>
+        
+    </header>
+    <nav>
+        <a href="">home</a>
+        <a href="">fale conosco</a>
+        <a href="">veja mais</a>
+    </nav>
+    <main>
+        <section>
+            <p class="p1">Informe o seu peso:</p>
+            <div class="c1"><input type="number" name="peso" id="peso" placeholder="Peso (kg)"></div>
+            <p class="p2">Informe a sua altura:</p>
+            <div class="c2"><input type="number" name="altura" id="altura" placeholder="Altura (M)"></div>
+            <div class="botao" onclick="imc()">Calcular</div>
+        </section>
+        <section class="sec">
+            <span id="R" class="result"></span>
+            <span id="r"></span>
+            <div class="resultin" id="resultinho"></div>
+        
+    </main>
+    
+   
+
+    <script>
+        function imc(){
+            var peso = document.getElementById("peso").value;
+            var altura = document.getElementById("altura").value;
+            var resultado = document.getElementById("R")
+            var resulta = document.getElementById("r")
+            var resultin = document.getElementById("resultinho")
+            var pesoF = parseFloat(peso)
+            var alturaF = parseFloat(altura)
+            var imc = pesoF/alturaF ** 2
+            if(peso == 0 || altura == 0  ){
+                window.alert("informe valores validos")
+            }
+            else{
+                if( imc < 18.5){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "Abaixo Do Peso"
+                    resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está abaixo do recomendado <br> para a sua altura.`
+
+                }
+                if(imc >=18.5 && imc <=24.9){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "Peso Normal"
+                    resultin.textContent = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} é considerado normal para a sua altura.`
+                    
+                    
+                }
+                if(imc >= 25 && imc <= 29.9){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "acima do peso"
+                    resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está um pouco acima do recomendado <br> para a sua altura.`
+                } 
+                if (imc >= 30 && imc <= 34.9){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "obesidade 1"
+                    resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está acima do recomendado <br> para a sua altura.`
+                }
+                if (imc >= 35 && imc <= 39.9){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "obesidade 2"
+                    resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está muito acima do recomendado <br> para a sua altura.`
+                }
+                if (imc >40){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "obesidade 3"
+                    resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} é fatal para a sua altura.`
+                }
+               
+               
+               
+                resulta.style.fontFamily = "Kanit"
+                resulta.style.fontSize="bolder"
+                resulta.style.fontSize ="25px"
+                resulta.style.paddingLeft = "10px"
+                resultado.style.fontSize = "45px"
+                resultado.style.fontFamily = "Arial Black"
+                resultado.style.color = " rgb(100, 148, 148)"
+            }
+            
+        }
+    </script>
+</body>
+</html>

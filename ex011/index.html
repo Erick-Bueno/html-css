@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinamica</H1>
+    <p>Aumente e diminua o tamanho do seu navegador, ou tente abrir o site em um dispositivo diferente</p>
+    <picture>
+        <source media="(max-width: 800px )" srcset="macacopequeno.jpeg" type="image/jpeg">
+        <source media="(max-width: 980px )" srcset="macacomedia.jpeg" type="image/jpeg">
+        <img src="macacacogrande.jpg" alt="Imagem Flexivel">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos Reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+    </audio>
+    <p><a href="midia/musica.mp3">clique aqui para baixar o audio</a> caso o seu navegador não suporte</p>
+</body>
+</html>

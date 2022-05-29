@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Noto+Serif&display=swap');
+
+body{
+    background-color: #7A655B;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin: auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1360px;
+    
+    
+}
+.titulo1{
+    margin-left: 90px;
+    
+    
+}
+
+ nav{
+     
+     padding-top: 40px;
+     margin-right: 60px;
+ }
+ 
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    transition: 1s;
+
+}
+nav > a:hover{
+    color: #C77D58
+}
+.titulo2{
+    padding-left: 90px;
+    font-size:40px;
+}
+.parte1{
+    color: #FA9D6E;
+}
+img{
+    width: 100%;
+    
+}
+main{
+display: flex;
+flex-direction: row;
+}
+.artigo1{
+    padding-left: -20px;
+    padding-top: 80px;
+    width: 100%;
+    
+}
+.p1{
+    padding-left: 90px;
+}
+#nome{
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 250px;
+    border-radius: 10px;
+    border: solid white;
+    margin-bottom: 10px;
+    
+    
+}
+#email{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 250px;
+    border-radius: 10px;
+    border: solid white;
+    margin-bottom: 10px;
+}
+form{
+    padding-left: 90px;
+    
+}
+.botao{
+    background-color: #C77D58;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left:70px;
+    cursor: pointer;
+    transition: 1s;
+    
+
+}
+.botao:hover{
+    background-color: #dd530d;
+}
+.link5{
+    border: 2px solid #672a0c;
+    border-radius: 10px;
+    padding: 10px;
+}
+.link5:hover{
+    color: white;
+    background-color: #672a0c;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    nav > a{
+        margin-right: 20px;
+        
+    }
+    .link5{
+        line-height: 60px;
+       margin: auto;
+       
+    }
+    main{
+        flex-direction: column;
+        margin-left: -50px;
+    }
+    .artigo1{
+       text-align: center;
+    }
+    nav{
+        text-align: center;
+    }
+    .titulo1{
+        margin-left: -70px;
+        text-align: center;
+    }
+    .artigo2{
+        text-align: center;
+
+       
+    }
+    #nome{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .botao{
+        margin: auto;
+    }
+}

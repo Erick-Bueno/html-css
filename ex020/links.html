@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a::before{
+            content: "ola";
+        }
+        
+        a::after{
+            content: '[link]';
+        }
+        div > h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div:hover > h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com" rel="external" target="_blank">Youtube</a></li>
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwibyvf7yP32AhVRlJUCHe6HAoEQFnoECAwQAQ&url=https%3A%2F%2Ftwitter.com%2Flogin%3Flang%3Dpt&usg=AOvVaw24nEAz2rTA9h462Y2mlmEX" rel="external" target="_blank">twitter</a></li>
+        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi5_qORyf32AhVDg5UCHQNmDxcQFnoECA4QAQ&url=https%3A%2F%2Fpt-br.facebook.com%2F&usg=AOvVaw0RKP0_rOW_8aFTC81eeWeu" rel="external" target="_blank">facebook</a></li>
+    </ul>
+    <div>
+        <h1><a href="">teste</a></h1>
+    </div>
+</body>
+</html>

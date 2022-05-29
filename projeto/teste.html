@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: darkcyan;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        div:hover{
+            background-color: aqua;
+        }
+        div > .p1{    /* modifica apenas o paragrafo da div que tiver a class p1 */
+            display: none;
+            
+        }
+        div:hover > .p1{ /* quando pássar mouse sobre uma div que contem um paragrafo com class p1 faça o paragrafo p1 aparecer */
+            display: block;
+            
+            
+            
+        }
+        div:hover> .p2{
+            display: none;
+            
+        }
+        .p2{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 100px;
+            text-align: center;
+        }
+        .p1{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 100px;
+            text-align: center;
+            
+        }
+        .p1 > a{
+            text-decoration: none;
+            
+        }
+        .link1:visited{
+            color:chartreuse ;
+        }
+        .link1:active{
+            color:black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div><p class="p2">passe o mouse aki</p>
+        <p class="p1"><a href="#" class="link1">droga</a></p>
+    </div>  
+    
+</body>
+
+</html>

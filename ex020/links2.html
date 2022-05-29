@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:hover > h1{
+            color: red;
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:active{
+            color: blue;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        .especial::before{
+            content: '->';
+            display: inline-block;
+        }
+        .especial::after{
+            content: "<-";
+        }
+      
+       
+       
+    </style>
+</head>
+<body>
+    <a href="">
+        <h1>titulo</h1>
+    </a>
+    <div><a href="" class="especial">
+        <h1>teste</h1>
+    </a></div>
+</body>
+</html>

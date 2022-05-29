@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Noto+Serif&display=swap');
+body{
+    background-color: gray;
+    font-family: 'Kanit', sans-serif;
+}
+main{
+    background-color: white;
+    margin: auto;
+    padding-bottom: 20px;
+    
+    
+}
+.titulo1{
+   text-align: center;
+   padding-top: 50px;
+}
+.primeiro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.p1{
+    text-align: center;
+}
+.sec1{
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+}
+.titulo2{
+    padding-top:10px;
+    padding-left: 20px;
+}
+.p2{
+    padding-left: 20px;
+    margin-top: -10px;
+}
+.img1{
+    width: 25%;
+
+}
+.img3{
+    width: 25%;
+}
+.img4{
+    width: 25%;
+}
+.img2{
+    width: 25%;
+}
+img{
+    width: 80%;
+    margin-left: 290px;
+}
+.sec2{
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-top: -130px;
+    float: right;
+    margin-right: 20px;
+  
+    
+}
+.p3{
+    padding-left: 20px;
+    margin-top: -10px; 
+}
+.titulo3{
+    padding-top:10px;
+    padding-left: 20px;
+}.titulo4{
+    padding-top:10px;
+    padding-left: 20px;
+}
+.sec3{
+
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+.p4{
+    padding-left: 20px;
+    margin-top: -10px; 
+} 
+.tit{
+    padding-top:10px;
+    padding-left: 20px;
+}
+.sec5{
+    width: 400px;
+    height: 300px;
+    background-color: gray; 
+   float: left;
+    margin-top: -460px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.p6{
+    padding-left: 20px;
+    margin-top: -10px
+}
+.supervisor{
+    padding-top:10px;
+    padding-left: 20px;
+}
+@media screen and (max-width: 760px) {
+  .sec3{
+      margin-top: 400px;
+      margin-bottom: 500px;
+  }
+  .sec1{
+      margin-bottom: 180px;
+    }
+  
+}
