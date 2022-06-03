@@ -22,8 +22,10 @@
             
         }
         header{
+            background-color: red;
             padding: 10px;
             padding-bottom: 40px;
+            padding-top: 20px;
             display: flex;
             flex-direction: row;
             
@@ -38,6 +40,7 @@
             margin: auto;
             border-radius: 5px;
             margin-bottom: 30px;
+            padding: 15px;
             
            
             
@@ -112,6 +115,8 @@
             margin-left: 20px;
             padding-top: 10px;
             padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
         }
      
         .iimage{
@@ -123,7 +128,9 @@
             padding-left: 20px;
         }
         nav{
+            background-color: rgb(213, 231, 23);
             margin-bottom: 50px;
+            
         }
         nav > a{
             margin: 10px;
@@ -170,20 +177,29 @@
             var pesoF = parseFloat(peso)
             var alturaF = parseFloat(altura)
             var imc = pesoF/alturaF ** 2
+            var img = document.createElement("Img")
             if(peso == 0 || altura == 0  ){
                 window.alert("informe valores validos")
             }
             else{
-                if( imc < 18.5){
+                if (imc < 17){
+                    resultado.textContent = `${imc.toFixed(2)}`
+                    resulta.textContent = "Muito abaixo do peso"
+                    resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está muito abaixo do recomendado <br> para a sua altura.`
+                    img.setAttribute("src", "muitoabaixodopeso2.png")
+                }
+                if( imc <= 18.5 && imc >=17){
                     resultado.textContent = `${imc.toFixed(2)}`
                     resulta.textContent = "Abaixo Do Peso"
                     resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está abaixo do recomendado <br> para a sua altura.`
+                    img.setAttribute("src", "abaixodopeso2.png")
 
                 }
                 if(imc >=18.5 && imc <=24.9){
                     resultado.textContent = `${imc.toFixed(2)}`
                     resulta.textContent = "Peso Normal"
                     resultin.textContent = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} é considerado normal para a sua altura.`
+                    img.setAttribute("src", "pesonormal2.png")
                     
                     
                 }
@@ -191,25 +207,32 @@
                     resultado.textContent = `${imc.toFixed(2)}`
                     resulta.textContent = "acima do peso"
                     resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está um pouco acima do recomendado <br> para a sua altura.`
+                    img.setAttribute("src", "acimadopeso.png")
                 } 
                 if (imc >= 30 && imc <= 34.9){
                     resultado.textContent = `${imc.toFixed(2)}`
                     resulta.textContent = "obesidade 1"
                     resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está acima do recomendado <br> para a sua altura.`
+                    img.setAttribute("src", "obesidade1.jpg")
                 }
                 if (imc >= 35 && imc <= 39.9){
                     resultado.textContent = `${imc.toFixed(2)}`
                     resulta.textContent = "obesidade 2"
                     resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} está muito acima do recomendado <br> para a sua altura.`
+                    img.setAttribute("src", "obesidade2.png")
                 }
                 if (imc >40){
                     resultado.textContent = `${imc.toFixed(2)}`
                     resulta.textContent = "obesidade 3"
                     resultin.innerHTML = `De acordo com a Organização Mundial da Saúde, seu IMC de ${imc.toFixed(2)} é fatal para a sua altura.`
+                    img.setAttribute("src", "obesidade3.png")
                 }
                
                
-               
+                resultin.appendChild(img)
+                img.style.margin = "auto"
+                img.style.height = "250px"
+                img.style.width = "100px"
                 resulta.style.fontFamily = "Kanit"
                 resulta.style.fontSize="bolder"
                 resulta.style.fontSize ="25px"
