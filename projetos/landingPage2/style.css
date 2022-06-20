@@ -60,14 +60,45 @@ button{
     border-radius: 20px;
     box-shadow: 1px 1px 10px black;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.3s;
+    
     
 }
 button:hover{
     background-color: rgb(180, 153, 153);
-    
+   
+   
 }
 footer{
     text-align: right;
+    
+}
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+    .logo{
+        max-width: 20%;
+    }
+    .sec1{
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+    article{
+        text-align: center;
+    }
+    .twitter{
+        max-width: 4%;
+        
+    }
+    .insta{
+        max-width: 5%;
+    }
+    .face{
+        max-width: 3.8%;
+    }
+    h1{
+        text-align: center;
+    }
 }
 

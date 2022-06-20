@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(to right, #753F23, #755646);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #b07d63e8;
+    padding-bottom: -20px;
+   
+}
+.logo{
+    width: 7%;
+    margin-top: -5px;
+    margin-left: 20px;
+   
+    
+}
+ul{
+    list-style: none;
+    
+}
+li{
+    display: inline-block;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+   
+    
+    
+}
+.sec1{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+h1{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.p1{
+    color: white;
+    margin-bottom: 30px;
+}
+button{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px black;
+    cursor: pointer;
+    transition: 1s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+.sec2{
+    margin-top: -40px;
+    margin-right: 60px;
+}
+
+    
+    
+
+.p11{
+    width: 280px;
+    margin: auto;
+    border-top: 1px solid #b07d63e8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+.p2{
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+}
+.p3{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+.p4{
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #b07d63e8;
+    
+}
+span{
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
+.E{
+    color: red;
+}
+.R{
+    color: cornflowerblue;
+}
+.I{
+    color: brown;
+}
+.K{
+    color: darkgoldenrod;
+}
+.A{
+    color: darkseagreen;
+}
+.U{
+    color: darkkhaki;
+}
+.M{
+    color: coral;
+}
+.tit{
+    font-size: 50px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        ul{
+            list-style: none;
+            padding: 0px;
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            
+            
+        }
+        a:hover{
+            background-color: aqua;
+            
+        }
+        li{
+            display: inline-block;
+            
+           
+        }
+        ul ul{
+            display: none;
+        }
+        
+        ul li:hover ul{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">assuntos</a>
+                    <ul>
+                        <li><a href="">esportes</a></li>
+                        <li><a href="">culinaria</a></li>
+                        <li><a href="">desenhos</a></li>
+                    </ul>
+                </li>
+                <li><a href="">fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
