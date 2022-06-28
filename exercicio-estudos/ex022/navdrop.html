@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        ul{
+            list-style: none;
+            background-color: black;
+        }
+        li{
+            display: inline-block;
+           
+        }
+        a{
+         text-decoration: none;
+         padding: 10px;
+         display: inline-block;
+
+        }
+        ul ul{
+            display: none;
+        }
+        nav{
+            margin-top: 20px;
+
+            
+        }
+        ul li:hover ul{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+        }
+        a:hover{
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">saiba mais</a></li>
+            <li><a href="">outros</a>
+                <ul>
+                    <li><a href="">quem somos?</a></li>
+                    <li><a href="">contate-nos</a></li>
+                    <li><a href="">ajude-nos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
