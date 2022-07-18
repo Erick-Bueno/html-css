@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checkbox input{
+            display: none;
+        }
+        .checkbox input + label::before{
+            content: "";
+            display: inline-block;
+            border-radius: 5px;
+            border: solid black 1px;
+            background-color: white;
+            width: 18px;
+            height: 18px;
+           
+        }
+        .checkbox input:checked + label::before{
+            background-color: black;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="checkbox">
+        <input type="checkbox" name="" id="check">
+        <label for="check"> masculino</label>
+        <input type="checkbox" name="" id="check">
+        <label for="checkk"> feminino</label>
+    </div>
+</body>
+</html>

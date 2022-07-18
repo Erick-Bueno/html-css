@@ -6,37 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
         ul{
             list-style: none;
-            padding: 0px;
-            background-color: black;
-        }
-        a{
-            text-decoration: none;
-            padding: 10px;
-            display: inline-block;
-            
-            
-        }
-    
-        a:hover{
             background-color: aqua;
-            
         }
         li{
             display: inline-block;
-            
-           
         }
-        ul ul{
+        a{
+           text-decoration: none;
+           display: inline-block;
+           padding: 10px;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        ul li ul{
             display: none;
         }
-        
         ul li:hover ul{
+            position: absolute;
             display: flex;
             flex-direction: column;
-            position: absolute;
         }
     </style>
 </head>
@@ -45,14 +40,14 @@
         <nav>
             <ul>
                 <li><a href="">home</a></li>
-                <li><a href="">assuntos</a>
+                <li><a href="">fale conosco</a></li>
+                <li><a href="">loja</a>
                     <ul>
-                        <li><a href="">esportes</a></li>
-                        <li><a href="">culinaria</a></li>
-                        <li><a href="">desenhos</a></li>
+                        <li><a href="">roupas</a></li>
+                        <li><a href="">brinquedos</a></li>
+                        <li><a href="">jogos</a></li>
                     </ul>
                 </li>
-                <li><a href="">fale conosco</a></li>
             </ul>
         </nav>
     </header>
