@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            text-align: center;
+        }
+    
+        thead > tr > th{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        tbody > tr > td{
+            border: solid 1px black;
+            text-align: left;
+            padding: 5px;
+        }
+        tfoot > tr > th,td{
+            border: solid 1px black;
+            text-align: left;
+            padding: 5px;
+        }
+        thead > tr> th{
+            background-color: green;
+            position: sticky;
+            top: -1px;
+            background-color:green;
+
+        }
+        tbody > tr:nth-child(2n){
+            background-color: yellow;
+        }
+                
+    
+       
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                
+                <th scope="col">unidade federativa</th>
+                <th scope="col" style="width: 90px ;">população</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>
+                    barreiras
+                </td>
+                <td>
+                    260 150 100
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td>76.849.458
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis blanditiis nisi, excepturi sit mollitia nesciunt qui dignissimos dolorum? Similique neque praesentium, magnam deserunt accusamus reiciendis hic libero asperiores atque. Suscipit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea dolor cum molestias itaque veniam facilis quas, alias cupiditate exercitationem dolorum! Facilis dicta quo, provident dolores totam sunt autem recusandae.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente perferendis non, qui rerum tempore optio expedita, accusantium iste ab asperiores dicta perspiciatis! Laborum autem culpa porro officiis ipsum nostrum!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, quisquam porro beatae explicabo voluptates id fugit dolore quas quod. Sed, totam. Iure maiores illo amet provident? Quos non obcaecati adipisci?
+</body>
+</html>
